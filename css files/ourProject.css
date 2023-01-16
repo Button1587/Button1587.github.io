@@ -1,0 +1,54 @@
+/* Styles for the body */
+body {
+    height: 100vh;
+    background-color: #193718;
+}
+
+/* Styles for the header */
+.heading1 {
+    color: #fcaec8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    padding: 20px;
+}
+
+header img {
+    padding-top: 20px;
+}
+
+
+/* styles for the main  */
+main h2 {
+    color: #fcaec8;
+    font-family: 'Montserrat', "Segoe UI Semilight";
+    font-size: 50px;
+}
+
+main p {
+    color: #fcaec8;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* styles for the redirect button */
+.redirect {
+    color: #fcaec8;
+    border-color: #fcaec8;
+    border-width: 2px;
+    position: relative;
+    top: -85px;
+    right: -1400px;
+    height: 10vh;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+iframe {
+    position: center;
+}
+
+.redirect:hover {
+    background-color: #fcaec8;
+    color: whitesmoke;
+}

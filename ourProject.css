@@ -1,3 +1,8 @@
+.container {
+    max-width: 1200px; /* set a maximum width of 1200px for the container element */
+    margin: 0 auto; /* center the container on the page */
+}
+
 /* Styles for the body */
 body {
     height: 100vh;

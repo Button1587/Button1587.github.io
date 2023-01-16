@@ -5,27 +5,28 @@ body {
     background-image: linear-gradient(to top, #6e7f80, #f4c2c2, #8a2be2);
 }
 
-/* Style the header h1 with a unique font and color */
+/* Style the headers  */
 header h1 {
     color: #fcd500 ;
     font-family: 'Montserrat', sans-serif;
     font-size: 90px;
     text-align: center;
-    padding: 20px;
     text-shadow: 4px 4px 8px pink, 8px 8px 16px purple, 12px 12px 24px blue;
+
 }
 
-/* Styles for the search bar */
-.search-button {
-    background-color: transparent;
+/* styles for the vertical menu */
+nav a {
+   top: 0;
 }
 
-/* Styles for the search input */
+nav ul {
+    list-style-type: none;
 
-.search-input {
-    background-color: transparent;
+}
 
-
+nav li {
+    padding: 5px;
 }
 
 /* Styles for the main h3 button */

@@ -1,5 +1,6 @@
+/* container */
 .container {
-    max-width: 1200px; /* set a maximum width of 1200px for the container element */
+    max-width: 100%; /* set a maximum width of 100% for the container element */
     margin: 0 auto; /* center the container on the page */
 }
 
@@ -9,17 +10,48 @@ body {
     background-color: #193718;
 }
 
+/* makes the Button and H1 header align */
+.alignment {
+    display: flex;
+    align-items: center;
+}
+
+.Home, .About, .Contact {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcaec8;
+    font-size: 2vw; /* use a viewport-based unit for the font-size */
+    text-align: left;
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+nav {
+    display: flex; /* display the nav as a flex container */
+}
+
+ul {
+    list-style-type: none; /* remove the bullet points from the list items */
+    display: flex; /* display the list items as a flex container */
+    justify-content: space-between; /* distribute the list items evenly across the container */
+    width: 100%; /* set the width of the container to 100% */
+}
+
+
 /* Styles for the header */
 .heading1 {
     color: #fcaec8;
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 2vw; /* use a viewport-based unit for the font-size */
     text-align: left;
     padding: 20px;
 }
 
 header img {
     padding-top: 20px;
+
 }
 
 
@@ -27,33 +59,13 @@ header img {
 main h2 {
     color: #fcaec8;
     font-family: 'Montserrat', "Segoe UI Semilight";
-    font-size: 50px;
+    font-size: 5vw; /* use a viewport-based unit for the font-size */
 }
 
 main p {
     color: #fcaec8;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.5vw; /* use a viewport-based unit for the font-size */
 }
 
-/* styles for the redirect button */
-.redirect {
-    color: #fcaec8;
-    border-color: #fcaec8;
-    border-width: 2px;
-    position: relative;
-    top: -85px;
-    right: -1400px;
-    height: 10vh;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
 
-iframe {
-    position: center;
-}
-
-.redirect:hover {
-    background-color: #fcaec8;
-    color: whitesmoke;
-}

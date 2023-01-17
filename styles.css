@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px; /* set a maximum width of 1200px for the container element */
+    max-width: 100%; /* set a maximum width of 100% for the container element */
     margin: 0 auto; /* center the container on the page */
 }
 
@@ -11,47 +11,53 @@ body {
 
 /* Style the headers  */
 header h1 {
-    color: #fcd500 ;
+    color: #fcd500;
     font-family: 'Montserrat', sans-serif;
-    font-size: 90px;
+    font-size: 5vw; /* use a viewport-based unit for the font-size */
     text-align: center;
     text-shadow: 4px 4px 8px pink, 8px 8px 16px purple, 12px 12px 24px blue;
 
 }
-
-/* styles for the vertical menu */
-nav a {
-   top: 0;
+/* horizontal menu styles */
+nav {
+    display: flex; /* display the nav as a flex container */
 }
 
-nav ul {
-    list-style-type: none;
-
+ul {
+    list-style-type: none; /* remove the bullet points from the list items */
+    display: flex; /* display the list items as a flex container */
+    justify-content: space-between; /* distribute the list items evenly across the container */
+    width: 100%; /* set the width of the container to 100% */
 }
 
-nav li {
-    padding: 5px;
+li {
+    /* styles for the list items */
 }
+
+a {
+    /* styles for the links */
+}
+
 
 /* Styles for the main h3 button */
 main {
     padding-top: 100px;
     text-align: center;
 }
-
-
-/* styles for the button "project" */
-.project {
-    position: relative;
-    height: 10vh;
-    background-color: transparent;
-    right: 0px;
-    transition: background-color 0.3s ease;
+/* Styles for the horizontal menu */
+.Home, .About, .Contact {
+    text-decoration: none;
+    color: #fcd500;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 4px 4px 8px pink, 8px 8px 16px purple, 12px 12px 24px blue;
 }
+
+
+
 
 
 /* Styles for hovering over the Vibez Project button */
 .project:hover {
     background-color: #9033e1;
 }
-

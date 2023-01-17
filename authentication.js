@@ -11,7 +11,7 @@ function authenticate() {
 }
 
 // use the authorization code to obtain an access token
-let auth_code = getCodeFromUrl();
+let auth_code = 'BQCmv6Cw5oLouG7qL3GKEFs4lcd6Ha3pbhn0sV0Ca1KW6t5PuMUqtV5jkivj3Qx3nxIUaUN6SwCutM9hCiiBrjU2uhaEASy-bRbRquRcIm5Pap9pTQ4EyAa4HtwZEIL-5B-hR-jlJrIohuf3BVq9bXxU0XKcLoBZmacZ7PCXgl9wqDbjcRF0kOkdIjJLn2KckOg'
 let access_token = getAccessToken(auth_code);
 
 function getCodeFromUrl() {

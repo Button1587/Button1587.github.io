@@ -22,4 +22,37 @@ getAccessToken(auth_code)
 function getCodeFromUrl() {
     let params = new URLSearchParams(window.location.search);
     return params.get('code');
+
+    const searchForm = document.getElementById("search-form");
+    searchForm.addEventListener("submit", search);
+
 }
+
+const searchForm = document.getElementById("search-form");
+searchForm.addEventListener("submit", search);
+
+function search(event) {
+    event.preventDefault();
+    const query = document.getElementById("query").value;
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
+    fetch(url, {
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+        }
+    })
+        .then(response => response.json())
+        .then(data => {
+            // get the search results from the data object
+            const searchResults = data.tracks.items;
+            // clear the previous search results
+            document.getElementById("search-results").innerHTML = "";
+            // loop through the search results and add them to the UI
+            for (let i = 0; i < searchResults.length; i++) {
+                const track = searchResults[i];
+                const li = document.createElement("li");
+                li.innerHTML = `<a href="${track.external_urls.spotify}">${track.name}</a>`;
+                document.getElementById("search-results").appendChild(li);
+            }
+        });
+}
+

@@ -10,12 +10,12 @@ body {
     background-color: #193718;
 }
 
-/* makes the Button and H1 header align */
+/* makes the horizontal menu and H1 header align */
 .alignment {
     display: flex;
     align-items: center;
 }
-
+/* horizontal menu alignment */
 .Home, .About, .Contact {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;

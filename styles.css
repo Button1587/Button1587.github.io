@@ -52,9 +52,9 @@ main {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 4px 4px 8px pink, 8px 8px 16px purple, 12px 12px 24px blue;
 }
-
-
-
+#search-results {
+    display: block;
+}
 
 
 /* Styles for hovering over the Vibez Project button */

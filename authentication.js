@@ -1,31 +1,50 @@
-// redirect the user to the Spotify authentication page
+/// redirect the user to the Spotify authentication page
 function authenticate() {
-    let client_id = '46547f73d0804d0d95a44690313e4704';
-    let redirect_uri = 'https://button1587.github.io./';
+    let client_id = 'your_client_id';
+    let redirect_uri = 'your_redirect_uri';
     let scope = 'user-library-read user-read-playback-state user-read-currently-playing';
     let url = 'https://accounts.spotify.com/authorize?client_id=' + client_id +
         '&redirect_uri=' + redirect_uri +
         '&scope=' + scope +
-        '&response_type=code';
+        '&response_type=token';
     window.location = url;
 }
 
-// get the authorization code from the redirect URI
-let auth_code = getCodeFromUrl();
-
 // use the authorization code to obtain an access token
-getAccessToken(auth_code)
-    .then(access_token => {
-        // use the access token to make requests to the Spotify Web API
-    });
+let auth_code = getCodeFromUrl();
+let access_token = getAccessToken(auth_code);
 
 function getCodeFromUrl() {
-    let params = new URLSearchParams(window.location.search);
-    return params.get('code');
+    let url = window.location.href;
+    let code = url.split('=')[1];
+    return code;
+}
 
-    const searchForm = document.getElementById("search-form");
-    searchForm.addEventListener("submit", search);
+function getAccessToken(auth_code) {
+    let client_id = 'your_client_id';
+    let client_secret = 'your_client_secret';
+    let redirect_uri = 'your_redirect_uri';
+    let data = {
+        grant_type: 'authorization_code',
+        code: auth_code,
+        redirect_uri: redirect_uri
+    };
 
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+    headers.append('Authorization', 'Basic ' + btoa(client_id + ':' + client_secret));
+
+    let options = {
+        method: 'POST',
+        headers: headers,
+        body: new URLSearchParams(data)
+    };
+
+    fetch('https://accounts.spotify.com/api/token', options)
+        .then(response => response.json())
+        .then(data => {
+            access_token = data.access_token;
+        });
 }
 
 const searchForm = document.getElementById("search-form");
@@ -35,6 +54,7 @@ function search(event) {
     event.preventDefault();
     const query = document.getElementById("query").value;
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
+
     fetch(url, {
         headers: {
             'Authorization': 'Bearer ' + access_token
@@ -55,4 +75,3 @@ function search(event) {
             }
         });
 }
-

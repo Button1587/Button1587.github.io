@@ -1,7 +1,7 @@
 /// redirect the user to the Spotify authentication page
 function authenticate() {
-    let client_id = 'your_client_id';
-    let redirect_uri = 'your_redirect_uri';
+    let client_id = '46547f73d0804d0d95a44690313e4704';
+    let redirect_uri = 'https://button1587.github.io./';
     let scope = 'user-library-read user-read-playback-state user-read-currently-playing';
     let url = 'https://accounts.spotify.com/authorize?client_id=' + client_id +
         '&redirect_uri=' + redirect_uri +
@@ -21,9 +21,9 @@ function getCodeFromUrl() {
 }
 
 function getAccessToken(auth_code) {
-    let client_id = 'your_client_id';
-    let client_secret = 'your_client_secret';
-    let redirect_uri = 'your_redirect_uri';
+    let client_id = '46547f73d0804d0d95a44690313e4704';
+    let client_secret = 'c46e57754ae34b33be4a08822f8617b2';
+    let redirect_uri = 'https://button1587.github.io./';
     let data = {
         grant_type: 'authorization_code',
         code: auth_code,

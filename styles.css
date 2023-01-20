@@ -5,6 +5,7 @@
 
 body {
     background-color: #41B3A3;
+
 }
 
 .container {
@@ -19,7 +20,41 @@ body {
     position: relative;
 }
 
-.topHeading {
-    color: #d6d6d6;
+.headings {
+    color: lavender;
+    padding-top: 5px;
+    font-family: "Poppins", sans-serif;
+    float: left;
+    width: 65%;
 }
+
+.navbar {
+    padding-top: 20px;
+    float: right;
+    width: 35%;
+}
+
+nav ul li {
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    margin: 0 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: lavender;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #41B3A3;
+}
+
+
 

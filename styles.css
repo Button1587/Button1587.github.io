@@ -1,63 +1,25 @@
-.container {
-    max-width: 100%; /* set a maximum width of 100% for the container element */
-    margin: 0 auto; /* center the container on the page */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* Add a gradient background to the body */
 body {
+    background-color: #41B3A3;
+}
+
+.container {
     height: 100vh;
-    background-image: linear-gradient(to top, #6e7f80, #f4c2c2, #8a2be2);
+    width: 100%;
+    background-image: url("images/orange background.svg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
 }
 
-/* Style the headers  */
-header h1 {
-    color: #fcd500;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5vw; /* use a viewport-based unit for the font-size */
-    text-align: center;
-    text-shadow: 4px 4px 8px pink, 8px 8px 16px purple, 12px 12px 24px blue;
-
-}
-/* horizontal menu styles */
-nav {
-    display: flex; /* display the nav as a flex container */
+.topHeading {
+    color: #d6d6d6;
 }
 
-ul {
-    list-style-type: none; /* remove the bullet points from the list items */
-    display: flex; /* display the list items as a flex container */
-    justify-content: space-between; /* distribute the list items evenly across the container */
-    width: 100%; /* set the width of the container to 100% */
-}
-
-li {
-    /* styles for the list items */
-}
-
-a {
-    /* styles for the links */
-}
-
-
-/* Styles for the main h3 button */
-main {
-    padding-top: 100px;
-    text-align: center;
-}
-/* Styles for the horizontal menu */
-.Home, .About, .Contact {
-    text-decoration: none;
-    color: #fcd500;
-    font-size: 2vw;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 4px 4px 8px pink, 8px 8px 16px purple, 12px 12px 24px blue;
-}
-#search-results {
-    display: block;
-}
-
-
-/* Styles for hovering over the Vibez Project button */
-.project:hover {
-    background-color: #9033e1;
-}

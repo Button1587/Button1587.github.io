@@ -68,6 +68,11 @@ nav ul li a{
     transform: translate(-50%, -50%);
 }
 
-
-
+@media (max-width: 1440px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
 

@@ -41,4 +41,10 @@
     padding: 20px;
 }
 
+body {
+    background-image: url("images/orangebackground.svg");
+    background-color: #41B3A3;
+    background-position: center;
+    background-size: cover;
+}
 

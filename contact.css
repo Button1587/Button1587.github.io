@@ -1,62 +1,61 @@
-.container3 {
-    display: grid;
+body {
+    background-image: url("images/orangebackground.svg");
+    background-color: #41B3A3;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr .8fr;
+}
+.container3 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.7fr 2.2fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
     grid-template-areas:
-    "nav nav nav nav"
-    "sidebar main main main"
-    "sidebar content1 content2 content3"
-    "sidebar footer footer footer";
-    grid-gap: 0.2rem;
+    "contact contact nav"
+    "image image socials"
+    "image image socials";
 }
 
-nav {
-    background-color: #41B3A3;
+.image {
+    margin: 1rem;
+    background-image: url("images/bennett.jpg");
+    background-position: bottom;
+    background-size: cover;
+    grid-area: image;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.contact h1 {
+    font-family: "Poppins", sans-serif;
+    color: lavender;
+}
+
+.navbar {
+
     grid-area: nav;
 }
 
-main {
-    background-color: #41B3A3;
-    grid-area: main;
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 35px;
+    font-size: 20px;
 }
 
-#sidebar {
-    background-color: #41B3A3;
-    grid-area: sidebar;
-}
-
-#content1 {
-    background-color: #41B3A3;
-    grid-area: content1;
-}
-
-#content2 {
-    background-color: #41B3A3;
-    grid-area: content2;
-}
-
-#content3 {
-    background-color: #41B3A3;
-    grid-area: content3;
-}
-
-footer {
-    background-color: #41B3A3;
-    grid-area: footer;
-}
-
-@media (max-width: 550px) {
-    .container3 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-        grid-template-areas:
-        "nav"
-        "sidebar"
-        "menu"
-        "content1"
-        "content2"
-        "content3"
-        "footer";
-    }
+nav ul li a{
+    text-decoration: none;
+    color: lavender;
 }

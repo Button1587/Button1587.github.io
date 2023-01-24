@@ -2,34 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Deluxe Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
-<main>
 <div class="container">
-    <div class="headings">
-        <h1 id="topHeading">Bennett Rerick's</h1>
-        <h2 id="subHeading">Portfolio</h2>
-    </div>
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <div class="navmenu">
+        <h1>Bennett Rerick</h1>
+        <nav role='navigation'>
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Resume</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
         </nav>
     </div>
-</div>
-</main>
-<a href="projects.html">
-    <div class="square">
-        <div class ="square-text">Click me for my Projects!</div>
+    <div class="blank">
+        <section class="hidden">
+            <h2>Project 1</h2>
+            <p>Brief Description</p>
+        </section>
+
+        <section class="hidden">
+            <h2>Project 2</h2>
+            <p>Brief Description</p>
+        </section>
+
+        <section class="hidden">
+            <h2>Project 3</h2>
+            <p>Brief Description</p>
+        </section>
+
+        <section class="hidden" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+
     </div>
-</a>
-<script src="squareAnimations.js"></script>
+</div>
 </body>
 </html>

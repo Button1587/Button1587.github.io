@@ -32,6 +32,15 @@ body {
     grid-area: my-name-and-info;
 }
 
+.my-name-and-info h1 {
+    padding-left: 5%;
+    font-size: 400%;
+}
+
+.color-change {
+    color: #9e9e9e;
+}
+
 .moreinfo {
     grid-area: moreinfo;
 }

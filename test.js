@@ -1,16 +1,14 @@
-const hamburger = document.querySelector('.hamburger');
-const dropdown = document.getElementById("dropdown-menu");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener("click", function() {
-    dropdown.classList.toggle("show");
-});
+hamburger.addEventListener('click', ()=>{
+    //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
 
-dropdown.addEventListener("mouseleave", function() {
-    dropdown.classList.remove("show");
-});
-
-document.addEventListener("mouseleave", function(event) {
-    if (event.target.closest(".navbar") === null) {
-        dropdown.classList.remove("show");
-    }
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
 });

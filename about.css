@@ -1,4 +1,4 @@
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
     .hide-on-large {
         display: none;
     }
@@ -220,7 +220,7 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
     .hide-on-small {
         display: none;
     }

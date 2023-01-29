@@ -1,75 +1,320 @@
-/* Body Styles */
-body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
+@media only screen and (min-width: 800px) {
+    .hide-on-large {
+        display: none;
+    }
 
-/* styles for the container */
-.container {
-    background: #f4f4f4;
-    color: #444444;
-    font-family: "Poppins", sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 8fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        color: #444444;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 6fr;
+        grid-auto-flow: row;
+        grid-template-areas:
     "navmenu navmenu navmenu"
     "image my-name-and-info my-name-and-info"
+    }
+
+    .paragraph {
+        padding-left: .2%;
+        font-size: 150%;
+        color: #444444;
+    }
+
+    /* the image of myself on the about page */
+    .bennett {
+        height: 75vh;
+        box-shadow: 85vh 10vh 0 15vh #c1c1c4;
+    }
+
+    .image {
+        grid-area: image;
+        padding-left: 3vh;
+    }
+
+    .any {
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    .my-name-and-info {
+        grid-area: my-name-and-info;
+    }
+
+    /*about page text */
+    .my-name-and-info h1 {
+        padding-left: .2%;
+        font-size: 425%;
+        color: #444444;
+    }
+
+    /* neat little color switch on about page */
+    .color-change {
+        color: #ffffff;
+    }
+
+    h1 {
+        padding: 0 0 0 5px;
+    }
+
+    .navmenu {
+        grid-area: navmenu;
+        padding-bottom: 20vh;
+    }
+
+
+    .moreinfo {
+        grid-area: moreinfo;
+    }
+}
+
+    /* links and links menu */
+    a {
+        text-decoration: none;
+        color: #444444;
+    }
+
+    nav {
+        height: 6rem;
+        width: 100vw;
+        background-color: transparent;
+        display: flex;
+        position: fixed;
+        z-index: 10;
+    }
+
+    /*Styling Links*/
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 88vw;
+        padding: 0 0.7vw;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        margin: 0 0.7vw;
+    }
+
+    .nav-links li a:hover {
+        color: #4CAF50;
+    }
+
+    .nav-links li {
+        position: relative;
+    }
+
+    .nav-links li a::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0%;
+        background-color: #4CAF50;
+        position: absolute;
+        transition: all ease-in-out 250ms;
+        margin: 0 0 0 10%;
+    }
+
+    .nav-links li a:hover::before {
+        width: 80%;
+    }
+
+    /*Styling Hamburger Icon*/
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: #444444;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    "navmenu navmenu navmenu"
+    "Image Image Image"
     "moreinfo moreinfo moreinfo";
+    }
+
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #cccccc;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    li.fade{
+        opacity: 1;
+    }
 }
-.navmenu {
-    grid-area: navmenu;
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
-/* the image of myself on the about page */
-.bennett{
-   height: 80vh;
-}
 
-.image {
-   grid-area: image;
-}
+@media screen and (max-width: 800px){
+    .hide-on-small {
+        display: none;
+    }
 
-.my-name-and-info {
-    grid-area: my-name-and-info;
-}
-/*about page text */
-.my-name-and-info h1 {
-    padding-left: 5%;
-    font-size: 400%;
-}
-/* neat little color switch on about page */
-.color-change {
-    color: #9e9e9e;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        color: #444444;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+    }
 
-.moreinfo {
-    grid-area: moreinfo;
-}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 12fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    "navmenu navmenu navmenu"
+    "Image Image Image"
+    "moreinfo moreinfo moreinfo";
+    }
+
+    .Image {
+        grid-area: Image;
+    }
+    nav h1 {
+        padding: 2.2vh 0 0 2vh;
+    }
+
+    /* the image of myself on the about page */
+    .bennett{
+
+        width: 100%;
+        z-index: 0;
+        box-shadow: 0 25vh 0 0 #c1c1c4;
+    }
+
+    .moreinfo {
+        padding: 2vh 0 0 2vh;
+    }
+
+    .any {
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    /*about page text */
+    .my-name-and-info h1 {
+        padding-top: 2vh;
+        margin:  auto;
+        text-align: left;
+        font-size: 200%;
+        color: #444444;
+    }
+
+    .my-name-and-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .paragraph p {
+        padding-top: 2vh;
+        margin:  auto;
+        text-align: left;
+        font-size: 95%;
+        color: #444444;
+    }
+
+    .paragraph {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* neat little color switch on about page */
+    .color-change {
+        color: #ffffff;
+    }
+
+    h1 {
+        padding: 0 0 0 5px;
+    }
+
+    .navmenu {
+        grid-area: navmenu;
+        padding-bottom: 20vh;
+    }
+
+    .moreinfo {
+        grid-area: moreinfo;
+    }
 
 
-h1 {
-    padding: 0 0 0 5px;
-}
 
-right-container h1{
-    padding: 8px 0 0 5px;
-}
-a {
-    text-decoration: none;
-    color: #444444;
-    padding: 2%;
-}
-
-.right-container {
-    display: flex;
-    padding-left: 50%;
-}
-
-.navmenu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }

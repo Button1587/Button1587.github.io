@@ -8,31 +8,48 @@
 <body>
 <div class="container">
   <div class="navmenu">
-    <h1>Bennett Rerick</h1>
-    <div class="right-container">
-      <a href="index.html">
-        <h1 id="Home">Home</h1>
-      </a>
-      <a href="about.html">
-        <h1 id="About">About</h1>
-      </a>
-      <a href="resume.html">
-        <h1 id="Resume">Resume</h1>
-      </a>
-      <a href="index.html">
-        <h1 id="ContactMe">Contact</h1>
-      </a>
-    </div>
+    <nav>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <h1>Bennett Rerick</h1>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <div class="image">
+  <div class="image hide-on-small">
     <img class="bennett" src="images/bennett.jpg" alt="Self Portrait">
   </div>
-  <div class="my-name-and-info">
-    <h1>I'm Bennett Rerick.<br>A Cyber Operations student<br><span class="color-change">at Dakota State University</span> </h1>
-  </div>
-  <div class="moreinfo">
-    <p>blah blah blah place holder lorem ipsem</p>
+  <div class="my-name-and-info hide-on-small">
+    <h1 class="hide-on-small">I'm Bennett Rerick.<br>A Cyber Operations student<br><span class="color-change">at Dakota State University</span> </h1>
+    <div class="paragraph hide-on-small">
+      <p class="hide-on-small">“If you strike me down, I shall become more powerful than<br> you can possibly imagine.” - Obi-Wan Kenobi </p>
+    </div>
+    <h2 class="hide-on-small">Work Experience</h2>
+    <p class="hide-on-small">Although I don't have <span class="any">any</span> IT-related work experience, I've taken many college classes<br> that would help me exceed in an IT-related job.</p>
   </div>
 </div>
+<div class="container2 hide-on-large">
+  <div class="Image">
+    <img class="bennett" src="images/bennett.jpg" alt="Self Portrait">
+    <div class="my-name-and-info">
+      <h1>I'm Bennett Rerick.<br>A Cyber Operations student<br><span class="color-change">at Dakota State University</span></h1>
+    </div>
+    <div class="paragraph">
+      <p>“If you strike me down, I shall become more powerful than you can possibly imagine.” - Obi-Wan Kenobi </p>
+    </div>
+  </div>
+  <div class="moreinfo">
+    <h2>Work Experience</h2>
+    <p>Although I don't have <span class="any">any</span> IT-related work experience, I've taken many college class that<br> would help me exceed in an IT-related job.</p>
+  </div>
+</div>
+<script defer src="app.js"></script>
 </body>
 </html>

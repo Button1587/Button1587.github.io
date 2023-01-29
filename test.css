@@ -1,19 +1,103 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    color: #f2f5f7;
+    background: #f4f4f4;
+    color: #444444;
     font-family: "Poppins", sans-serif;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-body{
     overflow-x: hidden;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "navmenu navmenu navmenu"
+    "Image Image Image"
+    "moreinfo moreinfo moreinfo";
+}
+
+.Image {
+    grid-area: Image;
+}
+nav h1 {
+    padding: 2.2vh 0 0 2vh;
+}
+
+/* the image of myself on the about page */
+.bennett{
+
+    width: 100%;
+    z-index: 0;
+    box-shadow: 0 25vh 0 0 #c1c1c4;
+}
+
+.moreinfo {
+    padding: 2vh 0 0 2vh;
+}
+
+.any {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/*about page text */
+.my-name-and-info h1 {
+    padding-top: 2vh;
+    margin:  auto;
+    text-align: left;
+    font-size: 200%;
+    color: #444444;
+}
+
+.my-name-and-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph p {
+    padding-top: 2vh;
+    margin:  auto;
+    text-align: left;
+    font-size: 95%;
+    color: #444444;
+}
+
+.paragraph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* neat little color switch on about page */
+.color-change {
+    color: #ffffff;
+}
+
+h1 {
+    padding: 0 0 0 5px;
+}
+
+.navmenu {
+    grid-area: navmenu;
+    padding-bottom: 20vh;
+}
+
+.moreinfo {
+    grid-area: moreinfo;
+}
+
+/* links and links menu */
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
 nav{
     height: 6rem;
     width: 100vw;
-    background-color: #131418;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
     display: flex;
     position: fixed;
     z-index: 10;
@@ -36,6 +120,7 @@ nav{
 .nav-links li a:hover {
     color: #4CAF50;
 }
+
 .nav-links li {
     position: relative;
 }
@@ -57,7 +142,7 @@ nav{
 .hamburger div{
     width: 30px;
     height:3px;
-    background: #f2f5f7;
+    background: #444444;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -67,10 +152,12 @@ nav{
 
 /*Stying for small screens*/
 @media screen and (max-width: 800px){
+
     nav{
         position: fixed;
         z-index: 3;
     }
+
     .hamburger{
         display:block;
         position: absolute;
@@ -83,7 +170,7 @@ nav{
     }
     .nav-links{
         position: fixed;
-        background: #131418;
+        background: #cccccc;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -127,3 +214,5 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
+

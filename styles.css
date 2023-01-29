@@ -18,6 +18,7 @@ a {
     justify-content: center;
 }
 
+
 .hiddenMenu
 
 section{
@@ -93,9 +94,6 @@ section{
     }
 }
 
-body{
-    overflow-x: hidden;
-}
 nav{
     height: 6rem;
     width: 100vw;
@@ -159,6 +157,7 @@ nav{
         position: fixed;
         z-index: 3;
     }
+
     .hamburger{
         display:block;
         position: absolute;
@@ -169,6 +168,7 @@ nav{
         z-index: 2;
         transition: all 0.7s ease;
     }
+
     .nav-links{
         position: fixed;
         background: #cccccc;

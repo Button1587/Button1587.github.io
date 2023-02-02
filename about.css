@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1025px) {
     .hide-on-large {
         display: none;
     }
@@ -144,7 +144,7 @@
 
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
 
     .container {
         display: grid;
@@ -220,7 +220,7 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1024px){
     .hide-on-small {
         display: none;
     }
@@ -318,3 +318,5 @@
 
 
 }
+
+

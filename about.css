@@ -24,7 +24,7 @@
 
     .paragraph {
         padding-left: .2%;
-        font-size: 150%;
+        font-size: 140%;
         color: #444444;
     }
 
@@ -51,7 +51,7 @@
     /*about page text */
     .my-name-and-info h1 {
         padding-left: .2%;
-        font-size: 425%;
+        font-size: 400%;
         color: #444444;
     }
 
@@ -220,7 +220,7 @@
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 800px){
     .hide-on-small {
         display: none;
     }
@@ -237,7 +237,7 @@
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 12fr 1fr 1fr;
+        grid-template-rows: 20fr 1fr 1fr;
         gap: 0px 0px;
         grid-template-areas:
     "navmenu navmenu navmenu"
@@ -288,7 +288,7 @@
         padding-top: 2vh;
         margin:  auto;
         text-align: left;
-        font-size: 95%;
+        font-size: 90%;
         color: #444444;
     }
 

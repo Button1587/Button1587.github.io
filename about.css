@@ -237,7 +237,7 @@
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 20fr 1fr 1fr;
+        grid-template-rows: 30fr 1fr 1fr;
         gap: 0px 0px;
         grid-template-areas:
     "navmenu navmenu navmenu"
@@ -248,13 +248,9 @@
     .Image {
         grid-area: Image;
     }
-    nav h1 {
-        padding: 2.2vh 0 0 2vh;
-    }
 
     /* the image of myself on the about page */
     .bennett{
-
         width: 100%;
         z-index: 0;
         box-shadow: 0 25vh 0 0 #c1c1c4;
@@ -308,7 +304,7 @@
 
     .navmenu {
         grid-area: navmenu;
-        padding-bottom: 20vh;
+        padding-bottom: 5vh;
     }
 
     .moreinfo {

@@ -1,4 +1,4 @@
-<form action="send_email.php" method="post">
+<form action="send-email.php" method="post">
     <!-- form inputs -->
     <input type="text" name="name">
     <input type="email" name="email">

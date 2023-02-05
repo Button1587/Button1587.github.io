@@ -6,11 +6,16 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
-
+/*links */
 a {
     color: #444444;
 }
 
+/* iframe */
+iframe {
+  display: block;
+    margin: 0 auto;
+}
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 2.6fr 1fr;

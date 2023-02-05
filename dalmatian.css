@@ -1,0 +1,58 @@
+body {
+    background-image: url("images/dClub.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* styles for the logo */
+.logo {
+    width: 8%;
+    height: 8%;
+    margin-right: 10px;
+}
+
+.navmenu nav {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding-left: 5vh; /* adds 10px of padding on all sides of the li element */
+
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.navmenu {
+    grid-area: 1 / 1 / 2 / 4;
+
+}
+
+.info { grid-area: 2 / 1 / 4 / 4; }
+
+.news { grid-area: 2 / 1 / 4 / 2; }
+
+.tour-dates { grid-area: 2 / 2 / 4 / 3; }
+
+.socials { grid-area: 2 / 3 / 4 / 4; }

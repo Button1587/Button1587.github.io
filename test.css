@@ -1,218 +1,43 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #444444;
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-    "navmenu navmenu navmenu"
-    "Image Image Image"
-    "moreinfo moreinfo moreinfo";
-}
-
-.Image {
-    grid-area: Image;
-}
-nav h1 {
-    padding: 2.2vh 0 0 2vh;
-}
-
-/* the image of myself on the about page */
-.bennett{
-
-    width: 100%;
-    z-index: 0;
-    box-shadow: 0 25vh 0 0 #c1c1c4;
-}
-
-.moreinfo {
-    padding: 2vh 0 0 2vh;
-}
-
-.any {
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-/*about page text */
-.my-name-and-info h1 {
-    padding-top: 2vh;
-    margin:  auto;
-    text-align: left;
-    font-size: 200%;
-    color: #444444;
-}
-
-.my-name-and-info {
-    width: 100%;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-}
-
-.paragraph p {
-    padding-top: 2vh;
-    margin:  auto;
-    text-align: left;
-    font-size: 95%;
-    color: #444444;
-}
-
-.paragraph {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-/* neat little color switch on about page */
-.color-change {
-    color: #ffffff;
+    justify-content: space-between;
 }
 
 h1 {
-    padding: 0 0 0 5px;
+    margin: 0;
 }
 
-.navmenu {
-    grid-area: navmenu;
-    padding-bottom: 20vh;
-}
-
-.moreinfo {
-    grid-area: moreinfo;
-}
-
-/* links and links menu */
-a {
-    text-decoration: none;
-    color: #444444;
-}
-
-nav{
-    height: 6rem;
-    width: 100vw;
-    background-color: transparent;
-    display: flex;
-    position: fixed;
-    z-index: 10;
-}
-
-/*Styling Links*/
-.nav-links{
-    display: flex;
+nav ul {
     list-style: none;
-    width: 88vw;
-    padding: 0 0.7vw;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-.nav-links li a{
+
+nav a {
+    color: #fff;
+    padding: 10px;
     text-decoration: none;
-    margin: 0 0.7vw;
-}
-.nav-links li a:hover {
-    color: #4CAF50;
 }
 
-.nav-links li {
-    position: relative;
-}
-.nav-links li a::before {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0%;
-    background-color: #4CAF50;
-    position: absolute;
-    transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
-}
-.nav-links li a:hover::before{
-    width: 80%;
+main {
+    padding: 10px;
 }
 
-/*Styling Hamburger Icon*/
-.hamburger div{
-    width: 30px;
-    height:3px;
-    background: #444444;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-.hamburger{
-    display: none;
+section h2 {
+    margin-top: 0;
 }
 
-/*Stying for small screens*/
-@media screen and (max-width: 800px){
-
-    nav{
-        position: fixed;
-        z-index: 3;
-    }
-
-    .hamburger{
-        display:block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-    }
-    .nav-links{
-        position: fixed;
-        background: #cccccc;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-    .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .nav-links li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-    .nav-links li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
-    }
-    li.fade{
-        opacity: 1;
-    }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
-/*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    transition: all 0.7s ease;
-    width:0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-

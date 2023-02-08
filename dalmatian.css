@@ -19,22 +19,14 @@ body {
 
 .info { grid-area: 2 / 1 / 4 / 4; }
 
-.news { grid-area: 2 / 1 / 4 / 2; }
-
-.tour-dates { grid-area: 2 / 2 / 4 / 3; }
-
-.socials { grid-area: 2 / 3 / 4 / 4; }
-
 .title {
     font-family: "Bell MT", serif;
     background-image: url('images/dalmationprint.jpg');
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 14%;
-}
-
-main h3 {
-    padding-top: 4vh;
+    text-align: center;
+    font-size: 5vh;
 }
 
 /* header img */
@@ -93,15 +85,6 @@ a {
     width: 3%;
 }
 
-.header .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px;
-    text-decoration: none;
-    height: 3%;
-    width: 3%;
-}
 
 /* menu */
 
@@ -118,7 +101,7 @@ a {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 39px 20px;
     position: relative;
     user-select: none;
 }
@@ -201,5 +184,11 @@ a {
 .tour-heading {
     color: white;
     font-size: 120%;
+    font-weight: bold;
 }
 
+
+
+.logo {
+    margin-top: 35vh;
+}

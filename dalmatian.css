@@ -188,7 +188,13 @@ a {
 }
 
 
-
 .logo {
     margin-top: 35vh;
+}
+
+.footerLogo {
+    align-items: center;
+    width: 5%;
+    height: 5%;
+    padding: 0 1vh 0 1vh;
 }

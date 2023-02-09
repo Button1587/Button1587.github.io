@@ -206,3 +206,51 @@ a {
     float: right;
     margin: 0;
 }
+
+@media screen and (min-width: 450px) {
+
+    /* Tour dates styles */
+
+    .tour-dates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date-location {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        padding: 1rem 0;
+        border-bottom: 1px solid white;
+    }
+
+    .date, .location {
+        color: white;
+    }
+
+    .tour-heading {
+        color: white;
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+    .title {
+        font-family: "Bell MT", serif;
+        background-image: url('images/dalmationprint.jpg');
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 14%;
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    /* social media small logos at bottom of page */
+    .footerLogo {
+        align-items: center;
+        width: 10%;
+        height: 10%;
+        padding: 0 1vh 0 1vh;
+    }
+
+}

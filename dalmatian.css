@@ -29,6 +29,12 @@ body {
     background-size: 14%;
     text-align: center;
     font-size: 5vh;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* header img */
@@ -266,5 +272,9 @@ a {
     /* Images below tour dates */
     .logo {
         margin-top: 30vh;
+    }
+
+    .title {
+        font-size: 2.5vh;
     }
 }

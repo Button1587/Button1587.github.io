@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>The Dalmatian Club</title>
+    <img class="headerimg" src="images/dClub.jpg" alt="Band Picture">
   <link rel="stylesheet" type="text/css" href="test.css">
-  <title>The Dalmatian Club</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#hamburger-menu").click(function() {
+        $("#menu-content").toggle();
+      });
+    });
+  </script>
 </head>
 <body>
 <header>
-  <h1>The Dalmatian Club</h1>
-  <nav>
+  <h1 class="title">THE DALMATIAN CLUB</h1>
+  <div id="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div id="menu-content">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 </header>
-<main>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>The Dalmatian Club is a community of dog lovers who love to talk about, learn about and take care of Dalmatians.</p>
-  </section>
-  <section id="services">
-    <h2>Services</h2>
-    <p>We offer a range of services for Dalmatian owners, including training classes, advice on care, and a monthly newsletter.</p>
-  </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Feel free to contact us if you have any questions or concerns about the club or your Dalmatian. We are always happy to help.</p>
-  </section>
+<div class="info">
+
+  <div class="tour-dates">
+    <h1 class="tour-heading">Tour</h1>
+    <div class="date-location">
+      <div class="date">MAY 5</div>
+      <div class="location">Los Angeles, CA</div>
+    </div>
+    <div class="date-location">
+      <div class="date">JUN 17</div>
+      <div class="location">San Francisco, CA</div>
+    </div>
+    <div class="date-location">
+      <div class="date">JUL 6</div>
+      <div class="location">Seattle, WA</div>
+    </div>
+  </div>
+  <table style="margin: 0 auto;">
+    <tr>
+      <td style="text-align: center;">
+        <a class="goodbyeMerc"
+           href="https://open.spotify.com/track/4wsinHTJfrigGIafofOK2i?si=16b50b0f29b5495f">
+          <img src="images/gMerc.jpg" alt="Logo" class="logo">
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
 </main>
 <footer>
-  <p>Copyright &copy; The Dalmatian Club 2023</p>
+  <table style="margin: 0 auto;">
+    <tr>
+      <td style="text-align: center;">
+        <a href="https://open.spotify.com/artist/6iBHqkZ4cEh71G0wNnkees?si=z3ItuQnHRpaoMNrSDeAwDw"><img
+                src="images/spotify.png" alt="Logo" class="footerLogo"></a>
+        <a href="https://www.instagram.com/thedalmatianclub/"><img src="images/instagram.png" alt="Logo"
+                                                                   class="footerLogo"></a>
+      </td>
+    </tr>
+  </table>
 </footer>
 </body>
 </html>

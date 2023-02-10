@@ -1,43 +1,180 @@
 body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    height: 250vh;
 }
 
-nav a {
-    color: #fff;
-    padding: 10px;
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.navmenu {
+    grid-area: 1 / 1 / 2 / 4;
+
+
+}
+
+.info { grid-area: 2 / 1 / 4 / 4; }
+
+.title {
+    font-family: "Bell MT", serif;
+    background-image: url('images/dalmationprint.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 14%;
+    font-size: 5vh;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header img */
+.headerimg {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid black;
+}
+
+.spotify {
+    width: 2%;
+    height: 2%;
+}
+
+/* link color */
+a {
+    color: white;
     text-decoration: none;
 }
 
-main {
-    padding: 10px;
+/* header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
 }
 
-section h2 {
-    margin-top: 0;
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+.header li a {
+    padding: 20px 20px;
+    text-decoration: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.header li a:hover {
+    font-weight: bold;
+}
+
+.header .logo2 {
+    display: block;
+    float: right;
+    font-size: 2em;
     padding: 10px;
+    text-decoration: none;
+    height: 3%;
+    width: 3%;
+}
+
+
+
+/* Tour dates styles */
+
+.tour-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-location {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+   padding: 1rem 0;
+    border-bottom: 1px solid white;
+}
+
+.date, .location {
+    color: white;
+}
+
+.tour-heading {
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 18vh;
+}
+
+/* Images below tour dates */
+.logo {
+    margin-top: 35vh;
+}
+
+/* social media small logos at bottom of page */
+.footerLogo {
+    align-items: center;
+    width: 5%;
+    height: 5%;
+    padding: 0 1vh 0 1vh;
+}
+
+/* spotify embedded playlist */
+.dalRadio {
+    float: right;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+
+#title {
     text-align: center;
+    margin: 0;
 }
+
+#hamburger-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+    display: block;
+}
+
+#hamburger-menu .bar {
+    height: 3px;
+    width: 26px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: transparent;
+    flex-direction: column;
+    width: 200px;
+}
+

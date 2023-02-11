@@ -192,12 +192,12 @@ header {
     .footerLogo {
         align-items: center;
         width: 8%;
-        height: 12%;
+        height: 16%;
         padding: 0 1vh 0 1vh;
     }
 
     .logo {
-        margin-top: 35vh;
+        margin-top: 25vh;
         width: 50%;
     }
 }

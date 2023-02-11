@@ -133,11 +133,6 @@ a {
     padding: 0 1vh 0 1vh;
 }
 
-/* spotify embedded playlist */
-.dalRadio {
-    float: right;
-    margin: 0;
-}
 
 header {
     display: flex;
@@ -191,5 +186,18 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* social media small logos at bottom of page */
+    .footerLogo {
+        align-items: center;
+        width: 8%;
+        height: 12%;
+        padding: 0 1vh 0 1vh;
+    }
+
+    .logo {
+        margin-top: 35vh;
+        width: 50%;
     }
 }

@@ -178,3 +178,18 @@ header {
     width: 200px;
 }
 
+@media only screen and (max-width: 600px) {
+    .title {
+        font-family: "Bell MT", serif;
+        background-image: url('images/dalmationprint.jpg');
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 14%;
+        font-size: 3vh;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

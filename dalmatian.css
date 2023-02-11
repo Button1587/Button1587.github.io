@@ -191,13 +191,13 @@ header {
     /* social media small logos at bottom of page */
     .footerLogo {
         align-items: center;
-        width: 8%;
-        height: 16%;
+        width: 6%;
+        height: 14%;
         padding: 0 1vh 0 1vh;
     }
 
     .logo {
         margin-top: 25vh;
-        width: 50%;
+        width: 75%;
     }
 }

@@ -26,8 +26,8 @@ body {
     background-image: url('images/dalmationprint.jpg');
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 14%;
-    font-size: 5vh;
+    background-size: 20%;
+    font-size: 8vh;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -113,6 +113,7 @@ a {
     color: white;
 }
 
+
 .tour-heading {
     color: white;
     font-size: 120%;
@@ -125,12 +126,21 @@ a {
     margin-top: 35vh;
 }
 
-/* social media small logos at bottom of page */
-.footerLogo {
+/* Footer Section */
+#footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 5%;
-    height: 5%;
-    padding: 0 1vh 0 1vh;
+    height: 60px;
+}
+
+.footer-container a {
+    margin: 0 20px;
+}
+
+.footer-container img {
+    width: 40px;
 }
 
 

@@ -1,76 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Dalmatian Club</title>
-    <img class="headerimg" src="images/dClub.jpg" alt="Band Picture">
-  <link rel="stylesheet" type="text/css" href="test.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("#hamburger-menu").click(function() {
-        $("#menu-content").toggle();
-      });
-    });
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="test.css" />
 </head>
 <body>
-<header>
-  <h1 class="title">THE DALMATIAN CLUB</h1>
-  <div id="hamburger-menu">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-  <div id="menu-content">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-</header>
-<div class="info">
+<header class="header-area">
+    <!-- site-navbar start -->
+    <div class="navbar-area">
+        <div class="container">
+                <!-- nav-toggler for mobile version only -->
+                <button class="nav-toggler">
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </div><!-- navbar-area end -->
 
-  <div class="tour-dates">
-    <h1 class="tour-heading">Tour</h1>
-    <div class="date-location">
-      <div class="date">MAY 5</div>
-      <div class="location">Los Angeles, CA</div>
+    <div class="intro-area">
+        <div class="container">
+            <h2>Responsive Navbar with pure JavaScript</h2>
+            <p>Please resize your browser and see the result</p>
+        </div>
     </div>
-    <div class="date-location">
-      <div class="date">JUN 17</div>
-      <div class="location">San Francisco, CA</div>
-    </div>
-    <div class="date-location">
-      <div class="date">JUL 6</div>
-      <div class="location">Seattle, WA</div>
-    </div>
-  </div>
-  <table style="margin: 0 auto;">
-    <tr>
-      <td style="text-align: center;">
-        <a class="goodbyeMerc"
-           href="https://open.spotify.com/track/4wsinHTJfrigGIafofOK2i?si=16b50b0f29b5495f">
-          <img src="images/gMerc.jpg" alt="Logo" class="logo">
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-</div>
-</main>
-<footer>
-  <table style="margin: 0 auto;">
-    <tr>
-      <td style="text-align: center;">
-        <a href="https://open.spotify.com/artist/6iBHqkZ4cEh71G0wNnkees?si=z3ItuQnHRpaoMNrSDeAwDw"><img
-                src="images/spotify.png" alt="Logo" class="footerLogo"></a>
-        <a href="https://www.instagram.com/thedalmatianclub/"><img src="images/instagram.png" alt="Logo"
-                                                                   class="footerLogo"></a>
-      </td>
-    </tr>
-  </table>
-</footer>
+</header>
 </body>
 </html>

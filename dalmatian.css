@@ -259,18 +259,4 @@ header {
         width: 75%;
     }
 
-    #menu-content ul  {
-        padding-top: 3vh;
-        float: right;
-        display: block;
-        list-style-type: none;
-    }
-
-    #menu-content li {
-        float: none;
-        display: none;
-        list-style-type: none;
-        padding-bottom: 2vh;
-    }
-
 }

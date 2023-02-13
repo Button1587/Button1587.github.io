@@ -40,9 +40,41 @@
         <p>Brief Description</p>
     </section>
     </div>
-    <div class="blank hidden" id="contact">
-       <h2>Contact Me @ bennett.rerick@gmail.com</h2>
+<form method="post" class="hidden" action="https://forms.un-static.com/forms/0b6b5b95b920f2da8e5f3a9f6c50ca95bed8ed02">
+    <div class="form-group2 row" id="contact">
+        <label for="name" class="col-4 col-form-label">Name</label>
+        <div class="col-8">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+            </div>
+        </div>
     </div>
+    <div class="form-group row">
+        <label for="email" class="col-4 col-form-label">E-mail address</label>
+        <div class="col-8">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="message" class="col-4 col-form-label">Message</label>
+        <div class="col-8">
+            <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </div>
+</form>
 </div>
 <script defer src="app.js"></script>
 <script src="navmenu.js"></script>

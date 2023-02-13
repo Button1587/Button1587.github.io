@@ -227,6 +227,19 @@ header {
         align-items: center;
     }
 
+    .singles {
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding-top: 35vh;
+        font-family: "Bell MT", serif;
+        background-image: url('images/dalmationprint.jpg');
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 35%;
+        font-size: 3vh;
+    }
+
     /* social media small logos at bottom of page */
     .footerLogo {
         align-items: center;

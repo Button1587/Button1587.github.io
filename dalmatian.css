@@ -240,6 +240,12 @@ header {
         width: 75%;
     }
 
+    /* Goodbye Mercury image below tour dates */
+    .specialLogo {
+        margin-top: 3vh;
+        width: 75%;
+    }
+
     #menu-content ul  {
         padding-top: 3vh;
         float: right;

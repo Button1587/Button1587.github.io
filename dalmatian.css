@@ -21,12 +21,13 @@ body {
 
 .info { grid-area: 2 / 1 / 4 / 4; }
 
+/*The big Dalmatian club title */
 .title {
     font-family: "Bell MT", serif;
     background-image: url('images/dalmationprint.jpg');
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 20%;
+    background-size: 35%;
     font-size: 8vh;
     text-align: center;
     margin: 0 auto;
@@ -42,24 +43,11 @@ body {
     border-bottom: 3px solid black;
 }
 
-.spotify {
-    width: 2%;
-    height: 2%;
-}
 
 /* link color */
 a {
     color: white;
     text-decoration: none;
-}
-
-/* header */
-
-.header {
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    top: 0;
 }
 
 .header ul {
@@ -126,6 +114,11 @@ a {
     margin-top: 35vh;
 }
 
+/* Goodbye Mercury image below tour dates */
+.specialLogo {
+    margin-top: 3vh;
+}
+
 /* Footer Section */
 #footer {
     color: #fff;
@@ -143,7 +136,7 @@ a {
     width: 40px;
 }
 
-
+/* navbar content */
 header {
     display: flex;
     justify-content: center;
@@ -152,6 +145,35 @@ header {
     position: relative;
 }
 
+/* this is for having the title and hamburger menu on the top of page that scrolls with the user
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+ */
+
+/*Check out our latest singles h1 */
+.singles{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 35vh;
+    font-family: "Bell MT", serif;
+    background-image: url('images/dalmationprint.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 35%;
+    font-size: 8vh;
+
+}
+
+/* Tour h1 title */
 #title {
     text-align: center;
     margin: 0;
@@ -183,6 +205,13 @@ header {
     width: 200px;
 }
 
+#menu-content li  {
+    padding: 1vh;
+    float: right;
+    display: flex;
+    list-style-type: none;
+}
+
 @media only screen and (max-width: 600px) {
     .title {
         font-family: "Bell MT", serif;
@@ -210,4 +239,16 @@ header {
         margin-top: 25vh;
         width: 75%;
     }
+
+    #menu-content ul  {
+        padding-top: 3vh;
+        float: right;
+        display: block;
+        list-style-type: none;
+    }
+
+    #menu-content li {
+        padding-bottom: 2vh;
+    }
+
 }

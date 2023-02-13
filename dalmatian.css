@@ -267,6 +267,9 @@ header {
     }
 
     #menu-content li {
+        float: none;
+        display: none;
+        list-style-type: none;
         padding-bottom: 2vh;
     }
 

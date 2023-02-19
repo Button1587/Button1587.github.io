@@ -2,9 +2,29 @@
 <head>
     <title>Contact me</title>
     <link rel="stylesheet" href="dalmatianContact.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hamburger-menu").click(function() {
+                $("#menu-content").toggle();
+            });
+        });
+    </script>
 </head>
-
 <body>
+<header>
+    <div id="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div id="menu-content">
+        <ul>
+            <li><a href="dalmatian.html">Home</a></li>
+            <li><a href="dalmatianContact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
 <form method="post" action="https://forms.un-static.com/forms/0a3b582e68173c2561b9d148d520571234937fdc">
     <div class="form-group2 row">
         <label for="name" class="col-4 col-form-label">Name</label>

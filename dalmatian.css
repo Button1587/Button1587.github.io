@@ -46,7 +46,7 @@ body {
 
 /* link color */
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -184,9 +184,15 @@ header {
     right: 10px;
     top: 10px;
     cursor: pointer;
-    display: none;
     display: block;
 }
+
+#menu-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 
 #hamburger-menu .bar {
     height: 3px;
@@ -200,16 +206,35 @@ header {
     position: absolute;
     top: 50px;
     right: 0;
-    background-color: transparent;
-    flex-direction: column;
     width: 200px;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-#menu-content li  {
-    padding: 1vh;
-    float: right;
-    display: flex;
+#menu-content ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-content li {
+    margin-bottom: 8px;
+}
+
+#menu-content li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: none;
+    transition: color 0.2s ease-in-out;
+}
+
+#menu-content li a:hover {
+    color: #0078d4;
 }
 
 @media only screen and (max-width: 600px) {

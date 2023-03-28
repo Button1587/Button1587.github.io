@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: black;
+    background-color: #1b1c1e;
     height: 250vh;
 }
 
@@ -40,13 +40,13 @@ body {
 .headerimg {
     width: 100%;
     height: auto;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #1b1c1e;
 }
 
 
 /* link color */
 a {
-    color: black;
+    color: #1b1c1e;
     text-decoration: none;
 }
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mountainStyles.css">
+</head>
+<body>
+  <nav class="side-menu">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span class="close-menu">&times;</span>
+  </nav>
+  <div class="bg-image">
+      <div class="nav-menu">
+        <img class=logo src="images/logo.webp" alt="My Website Logo">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#">About</a>
+          <a href="#">Tours</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="social-icons">
+          <img src="images/a.png" alt="">
+        </div>
+      </div>
+      <div class="center-content">
+        <h1><span>EXPLORATION</span><br><span class="second">IN THE</span>MOUNTAINS</h1>
+        <p>Explore Today!</p>
+        <button class="call-to-action"><strong>CALL TO ACTION</strong></button>
+      </div>
+  </div>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const sideMenu = document.querySelector('.side-menu');
+    const closeMenu = document.querySelector('.close-menu');
+
+    hamburgerMenu.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
